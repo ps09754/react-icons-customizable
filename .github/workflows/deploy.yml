@@ -31,17 +31,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
 
       - name: Cài đặt dependencies và Build Thư viện Icon (Root)
         run: |
-          npm ci
+          npm install
           npm run build
 
       - name: Cài đặt dependencies và Build Demo
         run: |
           cd demo
-          npm ci
+          npm install
           npm run build
 
       - name: Cấu hình GitHub Pages
