@@ -2,6 +2,8 @@
 
 Một thư viện Icon React **cao cấp (premium)**, **hiệu năng cực cao**, hỗ trợ **custom toàn diện** và tích hợp sẵn **các hiệu ứng chuyển động (animations)** mượt mà, tối ưu bằng phần cứng (hardware-accelerated).
 
+🎨 **[XEM TRỰC TIẾP DEMO TƯƠNG TÁC TẠI ĐÂY (LIVE INTERACTIVE SANDBOX)](https://ps09754.github.io/react-icons-customizable/)**
+
 Thư viện bao gồm **hơn 230+ icons** thông dụng được xây dựng trên chuẩn SVG hiện đại, hỗ trợ đầy đủ **TypeScript**, **Tree-shaking** (chỉ bundle những icon bạn thực sự sử dụng) và hoàn toàn an toàn với Server-Side Rendering (SSR) như Next.js.
 
 ---
