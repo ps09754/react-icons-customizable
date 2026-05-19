@@ -14,8 +14,6 @@ Thư viện bao gồm **hơn 230+ icons** thông dụng được xây dựng tr�
 - [🚀 React Icons Customizable](#-react-icons-customizable)
   - [📖 Mục lục](#-mục-lục)
   - [📦 Hướng dẫn cài đặt (Installation)](#-hướng-dẫn-cài-đặt-installation)
-    - [Cách 1: Cài đặt trực tiếp từ GitHub (Nhanh nhất, không cần tài khoản NPM)](#cách-1-cài-đặt-trực-tiếp-từ-github-nhanh-nhất-không-cần-tài-khoản-npm)
-    - [Cách 2: Phát hành lên NPM Registry (Chuyên nghiệp nhất)](#cách-2-phát-hành-lên-npm-registry-chuyên-nghiệp-nhất)
   - [🛠️ Cách sử dụng (Usage)](#️-cách-sử-dụng-usage)
     - [1. Sử dụng Icon Cơ bản (Tĩnh)](#1-sử-dụng-icon-cơ-bản-tĩnh)
     - [2. Hiệu ứng Scale mượt mà khi Hover](#2-hiệu-ứng-scale-mượt-mà-khi-hover)
@@ -30,10 +28,6 @@ Thư viện bao gồm **hơn 230+ icons** thông dụng được xây dựng tr�
 ---
 
 ## 📦 Hướng dẫn cài đặt (Installation)
-
-Bạn và mọi người có thể cài đặt thư viện này thông qua hai cách chính dưới đây:
-
-### Cách 1: Cài đặt trực tiếp từ GitHub (Nhanh nhất, không cần tài khoản NPM)
 
 Do thư viện đã được cấu hình tự động biên dịch (`prepare` script), người dùng có thể tải trực tiếp phiên bản mới nhất từ kho lưu trữ GitHub của bạn bằng một câu lệnh duy nhất:
 
@@ -55,32 +49,7 @@ pnpm add ps09754/react-icons-customizable
 > [!NOTE]  
 > Khi cài đặt theo cách này, trình quản lý gói sẽ tự động tải mã nguồn từ GitHub của bạn, cài đặt các thư viện phát triển phụ thuộc (devDependencies) tạm thời, biên dịch thư viện sang thư mục `dist/` thông qua Rollup, và loại bỏ tài nguyên thừa. Điều này giúp gói hoạt động hoàn hảo mà không cần đẩy thư mục `dist/` lên GitHub!
 
----
 
-### Cách 2: Phát hành lên NPM Registry (Chuyên nghiệp nhất)
-
-Để người dùng có thể cài đặt ngắn gọn thông qua tên package chuẩn: `npm install react-icons-customizable`, bạn cần phát hành thư viện lên hệ thống NPM Registry:
-
-1. **Tạo tài khoản:** Đăng ký tài khoản miễn phí tại trang chủ [npmjs.com](https://www.npmjs.com) (nếu chưa có).
-2. **Đăng nhập trên Terminal:** Chạy lệnh sau trong thư mục dự án và điền thông tin tài khoản của bạn:
-   ```bash
-   npm login
-   ```
-3. **Biên dịch dự án:** Đảm bảo thư viện đã được build chuẩn xác:
-   ```bash
-   npm run build
-   ```
-4. **Publish lên NPM:** Đẩy gói lên npm registry toàn cầu:
-   ```bash
-   npm publish --access public
-   ```
-
-*Sau khi publish thành công, mọi người có thể dễ dàng cài đặt qua:*
-```bash
-npm install react-icons-customizable
-```
-
----
 
 ## 🛠️ Cách sử dụng (Usage)
 

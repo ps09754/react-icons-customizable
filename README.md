@@ -14,8 +14,6 @@ This library features **over 230+ handcrafted, modern SVG icons** built with ful
 - [🚀 React Icons Customizable](#-react-icons-customizable)
   - [📖 Table of Contents](#-table-of-contents)
   - [📦 Installation](#-installation)
-    - [Method A: Install directly from GitHub (Fastest, no NPM account required)](#method-a-install-directly-from-github-fastest-no-npm-account-required)
-    - [Method B: Publishing to NPM Registry (Most Professional)](#method-b-publishing-to-npm-registry-most-professional)
   - [🛠️ Usage](#️-usage)
     - [1. Static Icon usage](#1-static-icon-usage)
     - [2. Tactile Elastic Bouncy Scale on Hover](#2-tactile-elastic-bouncy-scale-on-hover)
@@ -30,10 +28,6 @@ This library features **over 230+ handcrafted, modern SVG icons** built with ful
 ---
 
 ## 📦 Installation
-
-You can install this library in your projects using one of the two methods below:
-
-### Method A: Install directly from GitHub (Fastest, no NPM account required)
 
 Since we have configured an automatic `"prepare": "npm run build"` compilation trigger in our package, developers can install this library directly from your GitHub repository with a single command. 
 
@@ -52,30 +46,6 @@ yarn add ps09754/react-icons-customizable
 **Using PNPM:**
 ```bash
 pnpm add ps09754/react-icons-customizable
-```
-
----
-
-### Method B: Publishing to NPM Registry (Most Professional)
-
-To make it installable via standard npm package name shorthand `npm install react-icons-customizable`, publish it to the global public NPM Registry:
-
-1. **Register/Login:** Create a free account at [npmjs.com](https://www.npmjs.com) and log in via your terminal:
-   ```bash
-   npm login
-   ```
-2. **Build and Validate:** Ensure the typescript compiler and Rollup build run cleanly:
-   ```bash
-   npm run build
-   ```
-3. **Publish:** Push your package live:
-   ```bash
-   npm publish --access public
-   ```
-
-*Once successfully published, anyone can install it via:*
-```bash
-npm install react-icons-customizable
 ```
 
 ---
