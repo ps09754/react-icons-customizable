@@ -1,101 +1,101 @@
 # 🚀 React Icons Customizable
 
-Một thư viện Icon React **cao cấp (premium)**, **hiệu năng cực cao**, hỗ trợ **custom toàn diện** và tích hợp sẵn **các hiệu ứng chuyển động (animations)** mượt mà, tối ưu bằng phần cứng (hardware-accelerated).
+A high-performance, premium, and fully customizable React icon library with built-in, hardware-accelerated animations.
 
-🎨 **[XEM TRỰC TIẾP DEMO TƯƠNG TÁC TẠI ĐÂY (LIVE INTERACTIVE SANDBOX)](https://ps09754.github.io/react-icons-customizable/)**
-
-Thư viện bao gồm **hơn 230+ icons** thông dụng được xây dựng trên chuẩn SVG hiện đại, hỗ trợ đầy đủ **TypeScript**, **Tree-shaking** (chỉ bundle những icon bạn thực sự sử dụng) và hoàn toàn an toàn với Server-Side Rendering (SSR) như Next.js.
+🌐 **[Tiếng Việt](./README.vi.md)** | 🎨 **[LIVE INTERACTIVE SANDBOX DEMO](https://ps09754.github.io/react-icons-customizable/)**
 
 ---
 
-## 📖 Mục lục
+This library features **over 230+ handcrafted, modern SVG icons** built with fully native animations, robust **TypeScript declarations**, **Tree-shaking support** (only bundle the icons you actually use), and is entirely safe for **Server-Side Rendering (SSR)** systems like Next.js.
+
+---
+
+## 📖 Table of Contents
 - [🚀 React Icons Customizable](#-react-icons-customizable)
-  - [📖 Mục lục](#-mục-lục)
-  - [📦 Hướng dẫn cài đặt (Installation)](#-hướng-dẫn-cài-đặt-installation)
-    - [Cách 1: Cài đặt trực tiếp từ GitHub (Nhanh nhất, không cần tài khoản NPM)](#cách-1-cài-đặt-trực-tiếp-từ-github-nhanh-nhất-không-cần-tài-khoản-npm)
-    - [Cách 2: Phát hành lên NPM Registry (Chuyên nghiệp nhất)](#cách-2-phát-hành-lên-npm-registry-chuyên-nghiệp-nhất)
-  - [🛠️ Cách sử dụng (Usage)](#️-cách-sử-dụng-usage)
-    - [1. Sử dụng Icon Cơ bản (Tĩnh)](#1-sử-dụng-icon-cơ-bản-tĩnh)
-    - [2. Hiệu ứng Scale mượt mà khi Hover](#2-hiệu-ứng-scale-mượt-mà-khi-hover)
-    - [3. Hiệu ứng Phát sáng (Neon Glow) liên tục](#3-hiệu-ứng-phát-sáng-neon-glow-liên-tục)
-    - [4. Thay đổi màu sắc chuyển động khi Hover (Color Shift)](#4-thay-đổi-màu-sắc-chuyển-động-khi-hover-color-shift)
-    - [5. Loading Spinner tùy chỉnh tốc độ](#5-loading-spinner-tùy-chỉnh-tốc-độ)
-  - [⚙️ Props API Reference (Tài liệu tham khảo thuộc tính)](#️-props-api-reference-tài-liệu-tham-khảo-thuộc-tính)
-  - [🌀 Các hiệu ứng chuyển động tích hợp (Animation Engine)](#-các-hiệu-ứng-chuyển-động-tích-hợp-animation-engine)
-  - [🛠️ Hướng dẫn đóng góp & Thêm Icon mới trong 60 giây](#️-hướng-dẫn-đóng-góp--thêm-icon-mới-trong-60-giây)
+  - [📖 Table of Contents](#-table-of-contents)
+  - [📦 Installation](#-installation)
+    - [Method A: Install directly from GitHub (Fastest, no NPM account required)](#method-a-install-directly-from-github-fastest-no-npm-account-required)
+    - [Method B: Publishing to NPM Registry (Most Professional)](#method-b-publishing-to-npm-registry-most-professional)
+  - [🛠️ Usage](#️-usage)
+    - [1. Static Icon usage](#1-static-icon-usage)
+    - [2. Tactile Elastic Bouncy Scale on Hover](#2-tactile-elastic-bouncy-scale-on-hover)
+    - [3. Infinite Neon Glow Aura](#3-infinite-neon-glow-aura)
+    - [4. Interactive Color Shift on Hover](#4-interactive-color-shift-on-hover)
+    - [5. Loading Spinner with custom spin rate](#5-loading-spinner-with-custom-spin-rate)
+  - [⚙️ Props API Reference](#️-props-api-reference)
+  - [🌀 Animation Engine Specification](#-animation-engine-specification)
+  - [🛠️ Developer Guide: Add New Icons in under 60 seconds](#️-developer-guide-add-new-icons-in-under-60-seconds)
   - [📄 License](#-license)
 
 ---
 
-## 📦 Hướng dẫn cài đặt (Installation)
+## 📦 Installation
 
-Bạn và mọi người có thể cài đặt thư viện này thông qua hai cách chính dưới đây:
+You can install this library in your projects using one of the two methods below:
 
-### Cách 1: Cài đặt trực tiếp từ GitHub (Nhanh nhất, không cần tài khoản NPM)
+### Method A: Install directly from GitHub (Fastest, no NPM account required)
 
-Do thư viện đã được cấu hình tự động biên dịch (`prepare` script), người dùng có thể tải trực tiếp phiên bản mới nhất từ kho lưu trữ GitHub của bạn bằng một câu lệnh duy nhất:
+Since we have configured an automatic `"prepare": "npm run build"` compilation trigger in our package, developers can install this library directly from your GitHub repository with a single command. 
 
-**Sử dụng NPM:**
+Npm will clone, install dependencies, compile the source files to standard `dist/` folders and clean up automatically.
+
+**Using NPM:**
 ```bash
 npm install ps09754/react-icons-customizable
 ```
 
-**Sử dụng Yarn:**
+**Using Yarn:**
 ```bash
 yarn add ps09754/react-icons-customizable
 ```
 
-**Sử dụng PNPM:**
+**Using PNPM:**
 ```bash
 pnpm add ps09754/react-icons-customizable
 ```
 
-> [!NOTE]  
-> Khi cài đặt theo cách này, trình quản lý gói sẽ tự động tải mã nguồn từ GitHub của bạn, cài đặt các thư viện phát triển phụ thuộc (devDependencies) tạm thời, biên dịch thư viện sang thư mục `dist/` thông qua Rollup, và loại bỏ tài nguyên thừa. Điều này giúp gói hoạt động hoàn hảo mà không cần đẩy thư mục `dist/` lên GitHub!
-
 ---
 
-### Cách 2: Phát hành lên NPM Registry (Chuyên nghiệp nhất)
+### Method B: Publishing to NPM Registry (Most Professional)
 
-Để người dùng có thể cài đặt ngắn gọn thông qua tên package chuẩn: `npm install react-icons-customizable`, bạn cần phát hành thư viện lên hệ thống NPM Registry:
+To make it installable via standard npm package name shorthand `npm install react-icons-customizable`, publish it to the global public NPM Registry:
 
-1. **Tạo tài khoản:** Đăng ký tài khoản miễn phí tại trang chủ [npmjs.com](https://www.npmjs.com) (nếu chưa có).
-2. **Đăng nhập trên Terminal:** Chạy lệnh sau trong thư mục dự án và điền thông tin tài khoản của bạn:
+1. **Register/Login:** Create a free account at [npmjs.com](https://www.npmjs.com) and log in via your terminal:
    ```bash
    npm login
    ```
-3. **Biên dịch dự án:** Đảm bảo thư viện đã được build chuẩn xác:
+2. **Build and Validate:** Ensure the typescript compiler and Rollup build run cleanly:
    ```bash
    npm run build
    ```
-4. **Publish lên NPM:** Đẩy gói lên npm registry toàn cầu:
+3. **Publish:** Push your package live:
    ```bash
    npm publish --access public
    ```
 
-*Sau khi publish thành công, mọi người có thể dễ dàng cài đặt qua:*
+*Once successfully published, anyone can install it via:*
 ```bash
 npm install react-icons-customizable
 ```
 
 ---
 
-## 🛠️ Cách sử dụng (Usage)
+## 🛠️ Usage
 
-Dưới đây là một số ví dụ thực tế cách tích hợp các icon cao cấp vào ứng dụng React (hỗ trợ cả JavaScript và TypeScript):
+Here are some quick integration examples displaying the interactive custom attributes (compatible with both JavaScript and TypeScript):
 
 ```tsx
 import React from 'react';
-import { HomeIcon, LoadingSpinnerIcon, Heart, Search, Settings } from 'react-icons-customizable';
+import { HomeIcon, LoadingSpinnerIcon, Heart, Search } from 'react-icons-customizable';
 
-export const DashboardHeader = () => {
+export const Header = () => {
   return (
     <div style={{ display: 'flex', alignItems: 'center', gap: '24px', padding: '20px', background: '#0f172a', borderRadius: '12px', color: '#fff' }}>
       
-      {/* 1. Sử dụng Icon tĩnh cơ bản */}
+      {/* 1. Standard Static Icon */}
       <HomeIcon size={32} color="#6366f1" />
 
-      {/* 2. Hiệu ứng Scale mượt mà khi Hover (Tactile Elastic Bouncy) */}
+      {/* 2. Tactile Elastic Bouncy Scale on Hover */}
       <HomeIcon 
         size={32} 
         color="#a5b4fc" 
@@ -104,7 +104,7 @@ export const DashboardHeader = () => {
         style={{ cursor: 'pointer' }}
       />
 
-      {/* 3. Hiệu ứng Phát sáng Neon Glow chạy liên tục */}
+      {/* 3. Infinite Glow Pulse (Gaming Neon Style) */}
       <Heart 
         size={32} 
         color="#f43f5e" 
@@ -113,7 +113,7 @@ export const DashboardHeader = () => {
         animationDuration={1.8}
       />
 
-      {/* 4. Thay đổi màu sắc chuyển động mượt mà khi Hover */}
+      {/* 4. Interactive Color Shift on Hover */}
       <Search 
         size={32} 
         color="#f43f5e" 
@@ -123,7 +123,7 @@ export const DashboardHeader = () => {
         style={{ cursor: 'pointer' }}
       />
 
-      {/* 5. Vòng tròn quay Loading xoay liên tục tùy biến tốc độ */}
+      {/* 5. Custom Loading Spinner Spin Speed */}
       <LoadingSpinnerIcon size={32} color="#10b981" animationDuration={0.8} />
 
     </div>
@@ -133,48 +133,47 @@ export const DashboardHeader = () => {
 
 ---
 
-## ⚙️ Props API Reference (Tài liệu tham khảo thuộc tính)
+## ⚙️ Props API Reference
 
-Tất cả các icon trong thư viện đều kế thừa toàn bộ thuộc tính chuẩn của thẻ SVG React (`React.SVGProps<SVGSVGElement>`), giúp bạn thoải mái tùy biến với **Tailwind CSS**, CSS inline hoặc các thuộc tính ARIA.
+Every icon component in the library extends `React.SVGProps<SVGSVGElement>`, granting native support for **Tailwind CSS**, standard inline styles, classes, and generic SVG mouse/keyboard events.
 
-Các thuộc tính mở rộng độc quyền:
+### Extended Customizable Attributes:
 
-| Tên Prop | Kiểu Dữ Liệu | Giá Trị Mặc Định | Mô Tả Chi Tiết |
+| Prop Name | TypeScript Type | Default Value | Description |
 | :--- | :--- | :--- | :--- |
-| **`size`** | `string \| number` | `24` | Kích thước chiều rộng và chiều cao của Icon (tự động điền cho cả `width` và `height`). |
-| **`color`** | `string` | `'currentColor'` | Màu sắc mặc định của Icon (stroke hoặc fill tương ứng). |
-| **`hoverColor`** | `string` | *Không bắt buộc* | Màu sắc phụ được áp dụng khi người dùng hover qua (dùng cho hiệu ứng `color-shift` hoặc `glow`). |
-| **`animation`** | `'scale' \| 'rotate' \| 'color-shift' \| 'glow' \| 'loading' \| 'none'` | `'none'` | Loại hiệu ứng chuyển động áp dụng cho Icon. |
-| **`animationDuration`** | `number` | `0.3` | Thời gian hoàn thành 1 chu kỳ chuyển động tính bằng giây (seconds). |
-| **`hoverEffect`** | `boolean` | `false` | Nếu là `true`, hiệu ứng chỉ kích hoạt khi hover chuột qua. Nếu `false`, hiệu ứng chạy vô hạn (infinite). |
+| **`size`** | `string \| number` | `24` | Width and height of the icon container (maps dynamically to both). |
+| **`color`** | `string` | `'currentColor'` | Main color applied to the SVG path stroke or fill. |
+| **`hoverColor`** | `string` | *Optional* | Secondary color applied dynamically on hover/pulse animations (e.g. for `glow` or `color-shift`). |
+| **`animation`** | `'scale' \| 'rotate' \| 'color-shift' \| 'glow' \| 'loading' \| 'none'` | `'none'` | The keyframe CSS animation preset applied to the vector. |
+| **`animationDuration`** | `number` | `0.3` | Animation duration cycle in seconds (e.g. `0.8s`). |
+| **`hoverEffect`** | `boolean` | `false` | If `true`, the animation is only triggered on mouse hover. If `false`, the animation is infinite. |
 
 ---
 
-## 🌀 Các hiệu ứng chuyển động tích hợp (Animation Engine)
+## 🌀 Animation Engine Specification
 
-Tất cả hiệu ứng đều được tăng tốc phần cứng, mượt mà ở tần số quét cao (lên tới 144Hz+) nhờ tối ưu hóa CSS Custom Properties:
+All animations are hardware-accelerated using optimized CSS Custom Properties and filters for flawless 144Hz+ display rates:
 
-* **`scale`**: 
-  - *Khi Hover (`hoverEffect: true`):* Phóng to nhẹ nhàng `1.25x` đi kèm hiệu ứng đàn hồi bồng bềnh (`elastic cubic-bezier`).
-  - *Chạy liên tục (`hoverEffect: false`):* Nhịp thở đều đặn (pulsing) từ `1.0x` đến `1.2x` thu hút sự chú ý.
+* **`scale`**:
+  - *On Hover (`hoverEffect: true`):* Scales to `1.25x` using an elastic bouncy easing (`cubic-bezier(0.34, 1.56, 0.64, 1)`) for premium feedback.
+  - *Infinite (`hoverEffect: false`):* Soft breathing pulse scale (from `1.0x` to `1.2x`) to draw attention.
 * **`rotate`**:
-  - *Khi Hover:* Xoay nhẹ góc `45deg`, thích hợp cho các nút điều hướng hoặc menu dropdown.
-  - *Chạy liên tục:* Xoay tròn đều 360 độ vô tận.
+  - *On Hover:* Smoothly tilts by `45deg`, ideal for menu triggers and buttons.
+  - *Infinite:* Continuous, linear 360-degree rotation.
 * **`color-shift`**:
-  - Tự động chuyển đổi màu mượt mà từ `color` sang `hoverColor` (dạng nhịp thở hoặc ngay khi hover chuột qua).
+  - Transitions gracefully from `color` to `hoverColor` (either on hover or continuously).
 * **`glow`**:
-  - Tạo ra vầng hào quang neon cực đẹp bao quanh đường vector của icon bằng bộ lọc CSS `drop-shadow`.
+  - Injects a beautiful neon drop shadow drop glow aura (`drop-shadow(0 0 8px var(--ag-hover-color))`) around the precise SVG paths.
 * **`loading`**:
-  - Quay tròn 360 độ liên tục bất kể cài đặt `hoverEffect` nào, phù hợp cho trạng thái chờ phản hồi dữ liệu.
+  - Forces infinite 360deg rotation regardless of the `hoverEffect` value for loader feedback.
 
 ---
 
-## 🛠️ Hướng dẫn đóng góp & Thêm Icon mới trong 60 giây
+## 🛠️ Developer Guide: Add New Icons in under 60 seconds
 
-Để mở rộng thư viện và thêm bất cứ Icon SVG mới nào:
+Expanding the package with custom icons is extremely fast:
 
-1. **Chuẩn bị file:** Tìm hoặc vẽ path SVG của bạn. Tạo file mới tại `src/components/[TênIcon].tsx`.
-2. **Bọc bằng `IconBase`:** Sử dụng mẫu chuẩn sau:
+1. **Create the Component:** Save your SVG paths under a new file `src/components/[IconName].tsx` using this template:
    ```tsx
    import React from 'react';
    import { IconBase, IconBaseProps } from './IconBase';
@@ -192,7 +191,7 @@ Tất cả hiệu ứng đều được tăng tốc phần cứng, mượt mà �
            strokeLinejoin="round"
            {...props}
          >
-           {/* Thêm các thẻ path hoặc circle của SVG vào đây */}
+           {/* Ingress your SVG paths and tags here */}
            <circle cx="11" cy="11" r="8" />
            <line x1="21" y1="21" x2="16.65" y2="16.65" />
          </IconBase>
@@ -202,14 +201,14 @@ Tất cả hiệu ứng đều được tăng tốc phần cứng, mượt mà �
 
    SearchIcon.displayName = 'SearchIcon';
    ```
-3. **Export Icon:** Khai báo export trong file `src/index.ts`:
+2. **Export:** Export it inside `src/index.ts`:
    ```typescript
    export { SearchIcon } from './components/SearchIcon';
    ```
-4. **Biên dịch:** Chạy `npm run build` để hoàn tất biên dịch gói bundle chuẩn hóa tree-shakeable!
+3. **Compile:** Run `npm run build` to generate CJS/ESM production outputs, autocomplete typing declarations, and tree-shake features.
 
 ---
 
 ## 📄 License
 
-Dự án được phân phối theo giấy phép mã nguồn mở [MIT License](LICENSE).
+This project is licensed under the open-source [MIT License](LICENSE).
