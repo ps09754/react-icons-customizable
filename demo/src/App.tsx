@@ -483,6 +483,22 @@ export default function App() {
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [copied, setCopied] = useState<boolean>(false);
 
+  // Install Command State
+  const [pkgTab, setPkgTab] = useState<'npm' | 'yarn' | 'pnpm'>('npm');
+  const [installCopied, setInstallCopied] = useState<boolean>(false);
+
+  const installCommands = {
+    npm: 'npm install ps09754/react-icons-customizable',
+    yarn: 'yarn add ps09754/react-icons-customizable',
+    pnpm: 'pnpm add ps09754/react-icons-customizable',
+  };
+
+  const copyInstallCommand = () => {
+    navigator.clipboard.writeText(installCommands[pkgTab]);
+    setInstallCopied(true);
+    setTimeout(() => setInstallCopied(false), 2000);
+  };
+
   // Retrieve active selected component details
   const activeIconItem = CATALOG.find((item) => item.name === selectedIconName) || CATALOG[0];
   const ActiveIconComponent = activeIconItem.Component;
@@ -783,6 +799,86 @@ export default function App() {
           <p style={subtitle}>
             A massive premium library consisting of {CATALOG.length} dynamic, customizable animated React icons. Browse the catalog, filter, toggle animations and generate copy-paste React snippets.
           </p>
+
+          {/* Interactive Install Widget */}
+          <div style={{
+            display: 'inline-flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            background: 'rgba(15, 23, 42, 0.45)',
+            backdropFilter: 'blur(20px)',
+            border: '1px solid rgba(255, 255, 255, 0.08)',
+            borderRadius: '16px',
+            padding: '12px 16px',
+            marginTop: '20px',
+            maxWidth: '500px',
+            width: '100%',
+            boxSizing: 'border-box',
+            boxShadow: '0 4px 30px rgba(0, 0, 0, 0.3)',
+          }}>
+            {/* Tabs Row */}
+            <div style={{ display: 'flex', gap: '8px', marginBottom: '10px', width: '100%' }}>
+              {(['npm', 'yarn', 'pnpm'] as const).map((tab) => (
+                <button
+                  key={tab}
+                  onClick={() => setPkgTab(tab)}
+                  style={{
+                    flex: 1,
+                    background: pkgTab === tab ? '#6366f1' : 'rgba(255, 255, 255, 0.02)',
+                    border: pkgTab === tab ? '1px solid #818cf8' : '1px solid rgba(255, 255, 255, 0.05)',
+                    borderRadius: '8px',
+                    color: pkgTab === tab ? '#ffffff' : '#94a3b8',
+                    padding: '6px 12px',
+                    fontSize: '12px',
+                    fontWeight: 600,
+                    cursor: 'pointer',
+                    transition: 'all 0.2s',
+                    outline: 'none',
+                  }}
+                >
+                  {tab}
+                </button>
+              ))}
+            </div>
+            {/* Command & Copy Box */}
+            <div style={{
+              display: 'flex',
+              width: '100%',
+              background: '#090d16',
+              border: '1px solid rgba(255, 255, 255, 0.05)',
+              borderRadius: '10px',
+              padding: '10px 14px',
+              boxSizing: 'border-box',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              fontFamily: 'monospace',
+              fontSize: '13px',
+              color: '#38bdf8',
+              overflowX: 'auto',
+            }}>
+              <span style={{ whiteSpace: 'nowrap', marginRight: '16px' }}>
+                $ {installCommands[pkgTab]}
+              </span>
+              <button
+                onClick={copyInstallCommand}
+                style={{
+                  background: installCopied ? '#10b981' : 'rgba(99, 102, 241, 0.15)',
+                  border: installCopied ? '1px solid #34d399' : '1px solid rgba(99, 102, 241, 0.3)',
+                  borderRadius: '6px',
+                  color: '#ffffff',
+                  padding: '4px 10px',
+                  fontSize: '11px',
+                  fontWeight: 600,
+                  cursor: 'pointer',
+                  transition: 'all 0.2s',
+                  whiteSpace: 'nowrap',
+                  outline: 'none',
+                }}
+              >
+                {installCopied ? '🎉 Copied!' : 'Copy'}
+              </button>
+            </div>
+          </div>
         </header>
 
         {/* Workspace Split */}
